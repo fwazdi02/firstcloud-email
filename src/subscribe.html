@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Email Template</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+
+	body {
+		font-family: 'Noto Sans', sans-serif;
+		font-weight: 400;
+		color: black;
+		margin: 0;
+		padding: 0;
+	}
+
+	.text-left{
+		text-align: left;
+	}
+
+	.text-right{
+		text-align: right;
+	}
+
+	.text-center{
+		text-align: center;
+	}
+
+	.text-gray{
+		color: #333333;
+	}
+
+	.text-lighter{
+		color: #666666;
+	}
+
+	table{
+		overflow-x: scroll;
+	}
+
+	table tr th, table tr td{
+		margin: 0;
+		border-bottom: 1px solid #ccc;
+		padding: 1.5rem 1rem; 
+		text-align: left;
+		color: #2e2f30;
+		font-weight: 400;
+	}
+
+	table tr th{
+		border-width: 2px;
+	}
+
+	table tr td:last-child,	table tr th:last-child {
+    	text-align: right;
+	} 
+
+	table thead th, table tfoot td{
+		font-size: 14px;
+		font-weight: bold;
+		background-color: #F2F5F8;
+	}
+
+
+	.container{
+		margin: 0 auto;
+		padding: 2.5rem 2rem;
+	}
+
+	@media (min-width: 1200px) {
+		.container{
+			margin: 0 auto;
+			width: 85%;
+			padding: 3rem 3rem;
+		}		
+	}
+
+</style>
+<body style="background-color: white;">
+	<div class="container">
+		<img src="https://drive.firstcloud.id/img_email/logo.png" alt="logo">
+		<p style="font-size: 24px; margin-bottom: 2rem;">Your susbcribe first+ cloud storage</p>
+		<p class="text-gray" style="margin-bottom: 1.5rem">Dear {{ user }},</p>
+		<p class="text-gray" style="margin-bottom: 1.5rem">We are glad to inform you that your susbcribe first+ cloud storage.</p>
+		<hr style="background-color:#eee; color:#eee; opacity: .3;">
+		<p class="text-lighter">Storage Details</p>
+
+		<div style="width: 100%; height: 100%; overflow-x: auto;">
+			<table cellspacing="0" cellpadding="0" style="margin-bottom: 1rem; width: 100%;">
+				<thead>
+					<tr>
+						<th>PRODUCT NAME</th>
+						<th>PRICE</th>
+						<th>SUBTOTAL</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Monthly Medium 100GB</td>
+						<td>Rp 15.000/Month</td>
+						<td>Rp 15.000</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="border-bottom-width: 2px;"><span class="text-lighter" style="font-size: 14px;">GRAND TOTAL</span></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3" style="border-bottom-width: 0; padding-top: 2rem; padding-bottom: 2rem;"><span style="font-size: 20px; font-weight:bold;">Rp 15.000</span></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<p style="font-size:14px; margin-bottom: 3rem;" class="text-lighter">Note
+			<br>
+			<br>
+			Charge will be added to your next First Media monthly bill<br>
+			started date at <strong>9 Sept 2021</strong><br>
+			Thank you for trusting First+ Cloud as your cloud storage
+		</p>
+
+		<p class="text-lighter text-center" style="margin-bottom:1.2rem">Download the First+ Cloud mobile apps for better experience</p>
+
+		<div style="display:flex; justify-content: center; margin-bottom: 2rem;">
+			<a href="#" target="_blank">
+				<img src="https://drive.firstcloud.id/img_email/download-appstore.png">
+			</a>
+			<div style="display:block; content:' '; width:16px"></div>
+			<a href="#" target="_blank">
+				<img src="https://drive.firstcloud.id/img_email/download-gplay.png">
+			</a>
+		</div>
+
+		<div style="display:flex; justify-content: center; margin-bottom: 1.5rem;">
+			<a href="#" target="_blank">
+				<img src="https://drive.firstcloud.id/img_email/icon-twitter.png">
+			</a>
+			<div style="display:block; content:' '; width:16px"></div>
+			<a href="#" target="_blank">
+				<img src="https://drive.firstcloud.id/img_email/icon-facebook.png">
+			</a>
+			<div style="display:block; content:' '; width:16px"></div>
+			<a href="#" target="_blank">
+				<img src="https://drive.firstcloud.id/img_email/icon-linkedin.png">
+			</a>
+		</div>
+
+		<p class="text-center" style="font-size: 12px; color:#aaa">
+			This email was sent by First+ Cloud<br>
+			First Media Rewards & Recognition.<br>
+			A better company begins with a personalised employee experience.
+		</p>
+
+		<p class="text-center text-lighter" style="margin-bottom: .4rem">Customer Service 1500 595</p>
+		<p class="text-center" style="margin-top: 0; margin-bottom:0">
+			<small><a href="#" target="_blank" style="text-decoration: none; color:#2F80ED">
+				firscloud.com
+			</a></small>
+		</p>
+			
+	</div>
+</body>
+</html>
